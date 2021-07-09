@@ -131,3 +131,10 @@ a i:hover {
 p {
   text-align: center;
 }
+footer {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
