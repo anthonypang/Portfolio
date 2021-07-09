@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+#home {
+  height: 100vh;
+}
+
 body {
   color: black;
   background-color: #f0f0f0;
@@ -11,11 +15,8 @@ body {
 }
 
 section {
-  height: 100vh;
-}
-
-section {
   padding-top: 30px;
+  min-height: 50vh;
 }
 
 th {
