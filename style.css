@@ -1,10 +1,8 @@
+* {
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
-}
-
-#home {
-  height: 100vh;
-  top: 0;
 }
 
 body {
@@ -13,14 +11,14 @@ body {
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   background-color: #f0f0f0;
-  margin-top: 1%;
+  max-width: 100%;
 }
 
 section {
   display: flex;
-  margin-left: 20%;
-  margin-right: 20%;
-  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 20px;
 }
 
 th {
@@ -70,9 +68,15 @@ nav .navigation .active {
   text-align: center;
   display: flex;
   align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
+
   top: 0;
+  height: 100vh;
+}
+
+#home {
+  padding-top: 0px;
+  margin: 0;
+  justify-content: center;
 }
 
 .description h1 {
@@ -93,10 +97,6 @@ nav .navigation .active {
   text-align: center;
 }
 
-.projects img {
-  width: 300px;
-  height: auto;
-}
 .projectItem {
   padding: 20px;
 }
@@ -128,10 +128,38 @@ img {
   max-width: 100%;
 }
 
+.card {
+  display: flex;
+}
+.projectCover {
+  display: flex;
+  border: solid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  padding: 40px;
+  padding-bottom: 0;
+}
+
+.projectDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  border: solid;
+}
+
+.projects img {
+  width: 300px;
+  height: auto;
+}
+
 footer {
   display: flex;
   justify-content: center;
-
+  max-width: 100%;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
